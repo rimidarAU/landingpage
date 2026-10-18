@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rimidar</title>
+<meta name="description" content="rimidar — just trying to post through it all.">
+<meta name="theme-color" content="#F2F1EC">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F2F1EC'/%3E%3Ctext x='16' y='23' font-family='monospace' font-size='22' font-weight='500' text-anchor='middle' fill='%238C3A20'%3Er%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+  :root {
+    --paper: #F2F1EC;
+    --ink: #16171C;
+    --body: #3A3832;
+    --muted: #5E5B55;
+    --rule: #D4D1C7;
+    --accent: #8C3A20;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body { margin: 0; background: var(--paper); }
+
+  body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    padding: 56px 40px;
+    color: var(--ink);
+    font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+
+  a { color: var(--ink); }
+  a:hover, a:focus-visible { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+
+  .meta {
+    font-size: 11.5px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 32px;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 14px;
+  }
+
+  header .site { color: var(--accent); }
+
+  main {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    align-items: flex-start;
+    padding: 56px 0;
+  }
+
+  .intro { flex: 999 1 420px; min-width: 0; }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(48px, 9vw, 72px);
+    line-height: 1.02;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+  }
+
+  .intro p {
+    margin: 28px 0 0;
+    font-size: 15px;
+    line-height: 1.85;
+    color: var(--body);
+    max-width: 34em;
+  }
+
+  .intro p.tagline {
+    margin-top: 22px;
+    font-style: italic;
+    color: var(--muted);
+  }
+
+  nav {
+    flex: 1 1 260px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--ink);
+  }
+
+  nav a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    min-height: 56px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--rule);
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  nav a .arrow { color: var(--accent); transition: transform 150ms ease; }
+  nav a:hover .arrow, nav a:focus-visible .arrow { transform: translateX(4px); }
+
+  footer {
+    border-top: 1px solid var(--ink);
+    padding-top: 14px;
+  }
+
+  @media (max-width: 600px) {
+    body { padding: 32px 16px; }
+    main { padding: 40px 0; gap: 40px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    nav a .arrow { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+  <header class="meta">
+    <span class="site">rimidar.au</span>
+    <span>He / him · Australia</span>
+  </header>
+
+  <main>
+    <div class="intro">
+      <h1>rimidar</h1>
+      <p>Colourful Australian racing identity. U-North Document Review Department. Ideological Sollist. Novice Hermeticist. Gnostic Catholic. Reillusioned liberal.</p>
+      <p class="tagline">Just trying to post through it all.</p>
+    </div>
+
+    <nav aria-label="Elsewhere">
+      <a href="https://bsky.app/profile/rimidar.au">
+        <span>Bluesky</span>
+        <span class="arrow" aria-hidden="true">&#8594;</span>
+      </a>
+      <a href="mailto:rimidar@proton.me">
+        <span>Email</span>
+        <span class="arrow" aria-hidden="true">&#8594;</span>
+      </a>
+    </nav>
+  </main>
+
+  <footer class="meta">
+    This is not going to end well
+  </footer>
+
+</body>
+</html>
