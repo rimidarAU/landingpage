@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-AU">
 <head>
 <meta charset="utf-8">
@@ -26,7 +26,6 @@
     --lime: #C8FF2E;
     --pink: #FF2D95;
     --cyan: #19E3FF;
-    --orange: #FF6A1F;
   }
 
   * { box-sizing: border-box; }
@@ -221,8 +220,6 @@
     color: var(--dim);
   }
 
-  @media (max-width: 860px) {
-  }
   @media (max-width: 600px) {
     .status, footer { padding-left: 16px; padding-right: 16px; }
     .hero { padding: 16px 16px 16px; min-height: 130px; }
@@ -232,7 +229,7 @@
     .hero .serial { max-width: 100%; }
     .barcode { display: none; }
     .links { grid-template-columns: 1fr; }
-    .slab { min-height: 0; flex: 1; gap: 12px; padding: 14px 16px; }
+    .slab { min-height: 0; gap: 12px; padding: 14px 16px; }
     .links { flex: 0 0 auto; }
     .slab .name { font-size: clamp(28px, min(8vh, 11vw), 56px); }
     .slab svg { width: 28px; height: 28px; }
@@ -301,7 +298,7 @@
   <div class="hazard" aria-hidden="true"></div>
 
   <div class="ticker" aria-hidden="true">
-    <div class="ticker-track" aria-hidden="true">
+    <div class="ticker-track">
       <span>rimidar.au</span><span class="hot">///</span>
       <span>rimidar.au</span><span class="hot">///</span>
       <span>rimidar.au</span><span class="hot">///</span>
